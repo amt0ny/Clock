@@ -163,6 +163,7 @@ stpwtch=()=>{
 }
 
 reset=()=>{
+    stpwtch();
     var resetTimer = document.getElementById('mypara2');
     resetTimer.innerHTML = "00:00:00:00";
     document.getElementById('reset').style.background = '';
